@@ -4,7 +4,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        Login Peserta
+                        Login {{ request()->is('peserta'.env('APP_URL').'/login') ? 'Peserta' : 'Admin' }}
                     </div>
 
                     <div class="card-body">
